@@ -38,7 +38,7 @@ app.get("/about", (req, res) => {
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "This is from Help Template",
-    name: "Praveena will help to all",
+    name: "Pls take help from pravs",
   });
 });
 
