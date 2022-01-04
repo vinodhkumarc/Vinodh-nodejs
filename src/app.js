@@ -6,6 +6,8 @@ const app = express();
 const geoCodeRequest = require("./utils/geo-code");
 const foreCast = require("./utils/fore-cast");
 
+const port = process.env.PORT || 8080;
+
 //Define paths for Express config
 const publicDir = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../src/templates/views");
@@ -96,4 +98,4 @@ app.get("*", (req, res) => {
   res.send("404 Not Found");
 });
 
-app.listen(8080);
+app.listen(port);
